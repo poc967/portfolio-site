@@ -81,10 +81,7 @@ address a {
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 5rem;
-}
-
-.rel_skill {
-  flex-basis: 1;
+  padding: 0;
 }
 
 .rel_skill li {
@@ -94,6 +91,7 @@ address a {
   background-color: #ffbf00;
   border-radius: 5px;
   flex-basis: 15%;
+  min-width: 100%;
 }
 
 .alexa-flex-wrapper,
@@ -176,8 +174,50 @@ footer address {
   margin: 5rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   header {
     height: 150%;
+  }
+
+  h1 {
+    line-height: 5rem;
+    margin-top: 0px;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+  }
+
+  .rel_skill li {
+    min-width: 100%;
+  }
+
+  .alexa-proj-desc,
+  .alexa-proj-img,
+  .api-proj-desc,
+  .api-proj-img,
+  .orderbook-proj-desc,
+  .orderbook-proj-img {
+    min-width: 100%;
+    margin: 0;
+  }
+
+  .alexa-proj-img {
+    order: 1;
+  }
+
+  .alexa-proj-desc {
+    order: 2;
+  }
+
+  .orderbook-proj-desc {
+    order: 2;
+  }
+
+  .orderbook-proj-img {
+    order: 1;
+  }
+
+  address p {
+    width: 100%;
+    margin: 0;
   }
 }
