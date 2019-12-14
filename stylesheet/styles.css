@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
+  margin: 0%;
+  padding: 0%;
+  color: black;
+  text-align: center;
+  line-height: 200%;
+}
+
+header {
+  background-color: lightblue;
+  text-align: center;
+  padding: 25px 0px 0px 0px;
+  background:
+    lightblue url("../images/DSC_0378copy.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+}
+
+.me-img {
+  border: solid 4px white;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  object-fit: cover;
+}
+
+.me-img:hover {
+  transform: rotate(7deg) scale(1.05);
+  transition: all 0.25s;
+}
+
+h1 {
+  font-size: 72px;
+  letter-spacing: 10;
+}
+
+h2 {
+  letter-spacing: 0.3em;
+}
+
+h3 {
+  letter-spacing: 0.3em;
+}
+
+.tagline {
+  font-size: 25px;
+  margin-top: 0px;
+  color: white;
+}
+
+address p {
+  color: white;
+  display: inline-block;
+  margin-right: 55px;
+  font-style: normal;
+}
+
+address a {
+  text-decoration: none;
+  color: white;
+}
+
+.extra {
+  list-style-type: none;
+  padding: 5px, 10px, 5px, 10px;
+  width: 45%;
+}
+
+.cont {
+  display: inline;
+}
+
+.rel_skill ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 5rem;
+}
+
+.rel_skill {
+  flex-basis: 1;
+}
+
+.rel_skill li {
+  list-style: none;
+  margin: 20px;
+  text-align: center;
+  background-color: #ffbf00;
+  border-radius: 5px;
+  flex-basis: 15%;
+}
+
+.alexa-flex-wrapper,
+.api-flex-wrapper,
+.orderbook-flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.alexa-proj-desc,
+.alexa-proj-img,
+.api-proj-desc,
+.api-proj-img,
+.orderbook-proj-desc,
+.orderbook-proj-img {
+  flex-basis: 25%;
+  align-self: center;
+}
+
+.alexa-proj-desc,
+.api-proj-img,
+.orderbook-proj-desc {
+  margin-right: 10%;
+}
+
+.button {
+  display: inline-block;
+  background-color: aquamarine;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 45%;
+  color: black;
+}
+
+footer {
+  height: 25%;
+  width: 100%;
+  padding-top: 5px;
+  background-color: rgb(0, 0, 0);
+  border-top: solid #FFBF00 5px;
+  color: rgb(255, 255, 255);
+  margin-top: 45px;
+}
+
+footer address {
+  font-style: normal;
+}
+
+.nav {
+  background-color: black;
+  color: white;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.nav li {
+  display: inline-block;
+  padding: 5px 75px 5px 75px;
+}
+
+.nav li a {
+  text-decoration: none;
+}
+
+.nav li:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav li a:visited {
+  color: rgb(255, 255, 255);
+}
+
+.about-me p {
+  margin: 5rem;
+}
+
+@media (max-width: 500px) {
+  header {
+    height: 150%;
+  }
+}
