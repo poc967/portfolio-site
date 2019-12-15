@@ -91,7 +91,7 @@ address a {
   background-color: #ffbf00;
   border-radius: 5px;
   flex-basis: 15%;
-  min-width: 100%;
+  min-width: 35%;
 }
 
 .alexa-flex-wrapper,
@@ -175,15 +175,21 @@ footer address {
 }
 
 @media (max-width: 480px) {
-  header {
-    height: 150%;
+  h1 {
+    line-height: 2rem;
+    margin: 0.5rem;
+    font-size: 2rem;
   }
 
-  h1 {
-    line-height: 5rem;
-    margin-top: 0px;
-    margin-bottom: 2rem;
-    font-size: 4rem;
+  .me-img {
+    max-width: 50%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .tagline {
+    font-size: 1rem;
   }
 
   .rel_skill li {
@@ -219,5 +225,15 @@ footer address {
   address p {
     width: 100%;
     margin: 0;
+    font-size: 1rem;
+  }
+
+  .nav {
+    padding: 0;
+  }
+
+  .nav li {
+    width: 100%;
+    padding: 0;
   }
 }
