@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 body {
   background-color: rgb(255, 255, 255);
   font-family: 'Roboto', sans-serif;
@@ -19,20 +24,11 @@ header {
   background:
     lightblue url("../images/DSC_0378copy.jpg") no-repeat center;
   background-size: cover;
-  position: relative;
   min-height: 100vh;
-}
-
-.me-img {
-  border: solid 4px white;
-  border-radius: 50%;
-  margin-bottom: 25px;
-  object-fit: cover;
-}
-
-.me-img:hover {
-  transform: rotate(7deg) scale(1.05);
-  transition: all 0.25s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 h1 {
@@ -50,7 +46,6 @@ h3 {
 
 .tagline {
   font-size: 25px;
-  margin-top: 0px;
   color: white;
 }
 
@@ -76,18 +71,23 @@ address a {
   display: inline;
 }
 
+.rel_skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .rel_skill ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 5rem;
+  width: 90%;
   padding: 0;
 }
 
 .rel_skill li {
   list-style: none;
   margin: 20px;
-  text-align: center;
   background-color: #ffbf00;
   border-radius: 5px;
   flex-basis: 15%;
@@ -102,6 +102,7 @@ address a {
   padding: 2rem;
   align-items: center;
   justify-content: center;
+  min-height: 23vw;
 }
 
 .alexa-proj-desc,
@@ -120,14 +121,22 @@ address a {
   margin-right: 10%;
 }
 
+.button-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
 .button {
-  display: inline-block;
   background-color: aquamarine;
   text-decoration: none;
   padding: 0.5rem;
   border-radius: 5px;
   width: 45%;
   color: black;
+  flex-basis: 75%;
+  margin: 1vw;
 }
 
 footer {
@@ -145,25 +154,24 @@ footer address {
 }
 
 .nav {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75);
   color: white;
-  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 1vw;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-
-.nav li {
-  display: inline-block;
-  padding: 5px 75px 5px 75px;
+  margin: 0;
+  flex-wrap: wrap;
+  flex-basis: 25%;
 }
 
 .nav li a {
   text-decoration: none;
 }
 
-.nav li:hover {
-  background-color: rgba(255, 255, 255, 0.25);
+.nav li a:hover {
+  color: aquamarine;
 }
 
 .nav li a:visited {
@@ -172,6 +180,17 @@ footer address {
 
 .about-me p {
   margin: 5rem;
+}
+
+.tagline-container {
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  border-radius: 10px;
+  padding: 0.75rem;
+  width: 50%;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-width: 480px) {
